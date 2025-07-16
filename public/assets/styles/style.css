@@ -8,6 +8,10 @@
   margin: 0 auto;
   max-width: 100%;
   font-family: "Ariel", sans-serif;
+  /* background-color: black; */
+  background: linear-gradient(135deg, #fff8dc, #ffd700, #e5c100);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
 }
 
 a:link
@@ -37,7 +41,8 @@ a:link
 
 #logo
 {
-  width: 35%;
+  width: 55%;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -46,11 +51,15 @@ a:link
 #contact_form
 {
   margin-bottom: 5px;
+  color: #079247;
 }
 
 #margin_zero
 {
   margin: 0;
+}
+.button.is-link {
+  background-color: #079247;
 }
 
 /* Media Query for iPads */
@@ -71,10 +80,15 @@ and (min-width: 768px)
 {
   #logo
   {
-    max-width: 10%;
+    max-width: 20%;
   }
   .main
   {
     height: 80%;
   }
 }
+/* @keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+} */
